@@ -1,0 +1,13 @@
+spring:
+  webflux:
+    base-path: /api-test
+  r2dbc:
+    url: r2dbc:mariadb://localhost:3308/dip?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Seoul&useLegacyDatetimeCode=false
+    username: root
+    password: 1122
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc:
+          core: DEBUG
